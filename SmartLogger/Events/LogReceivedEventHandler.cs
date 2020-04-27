@@ -66,7 +66,7 @@ namespace SmartLogger.Events
 
             lock (e._locker)
             {
-                e._invocationList.Add(action);
+                e._invocationList.Remove(action);
             }
 
             return e;
